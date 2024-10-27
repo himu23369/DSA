@@ -1,0 +1,21 @@
+-> Memoization and tabulation are two common techniques used in dynamic programming to optimize the computation of recursive problems. They help avoid redundant calculations and improve the efficiency of the solution. Let's take a closer look at both techniques:
+
+Memoization(Top-down Approach)
+-----------
+Memoization involves storing the results of expensive function calls and returning the cached result when the same inputs occur again. In the context of dynamic programming, it's often used with recursion.
+
+Here's how memoization works:
+
+1.Create a data structure (like an array or a hash map) to store previously computed results.
+2.Before performing a calculation, check if the result for the current inputs already exists in the cache. If it does, return the cached result.
+3.If the result is not cached, calculate it and store it in the cache before returning it.
+
+Tabulation:
+----------
+Tabulation is a bottom-up approach where you solve smaller subproblems first and use their solutions to build up larger solutions iteratively. It involves creating a table (often an array) and filling it in a systematic order.
+
+Here's how tabulation works:
+
+Create an array or table with an appropriate size to store solutions for subproblems.
+Initialize the base cases of the problem (usually the simplest subproblems) in the table.
+Iterate through the table in a specific order (usually from the smallest subproblem to the largest), using previously computed solutions to calculate new ones.
